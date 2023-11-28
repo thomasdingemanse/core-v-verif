@@ -123,7 +123,7 @@ XRUN_DIR          = xcelium.d
 
 # verilator configuration
 VERILATOR           = verilator
-VERI_FLAGS         +=
+VERI_FLAGS         += -fi
 VERI_COMPILE_FLAGS += -Wno-BLKANDNBLK +define+COREV_ASSERT_OFF $(SV_CMP_FLAGS) # hope this doesn't hurt us in the long run
 VERI_TRACE         ?=
 VERI_OBJ_DIR       ?= cobj_dir
